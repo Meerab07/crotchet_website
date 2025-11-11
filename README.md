@@ -1,2 +1,1 @@
-# crotchet_website
-my crotchet website
+in your vscode run npm install then npm start
