@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #faf5ff;
+}
+
+.header {
+  background: linear-gradient(to right, #FFB6C1, #DDA0DD, #87CEEB);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.main {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.emoji {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.quote-box {
+  margin-top: 40px;
+  text-align: center;
+  background: #E6E6FA;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal button {
+  background: linear-gradient(to right, #FFB6C1, #DDA0DD);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 40px;
+  background: linear-gradient(to right, #9370DB, #FFB6C1);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
